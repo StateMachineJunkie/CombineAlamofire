@@ -7,9 +7,19 @@
 
 import Foundation
 
+/// See documentation for `AlbumId`.
+public struct PostId: Codable, Equatable, Hashable, RawRepresentable {
+    public typealias RawValue = Int
+    public var rawValue: Int
+
+    public init?(rawValue: Int) {
+        self.rawValue = rawValue
+    }
+}
+
 public struct JPPost: Codable, Equatable, Identifiable {
-    public let id: Int
-    let userId: Int
-    let title: String
-    let body: String
+    public let id: PostId
+    public let userId: UserId
+    public let title: String
+    public let body: String
 }
