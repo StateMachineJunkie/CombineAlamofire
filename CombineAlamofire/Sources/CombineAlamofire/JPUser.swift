@@ -26,8 +26,8 @@ public struct JPCompany: Codable, Equatable {
     let bs: String
 }
 
-public struct JPUser: Codable, Equatable {
-    let id: Int
+public struct JPUser: Codable, Equatable, Identifiable {
+    public let id: Int
     let name: String
     let username: String
     let email: MCEmailAddress

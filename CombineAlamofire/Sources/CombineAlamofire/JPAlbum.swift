@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct JPAlbum: Codable, Equatable {
+public struct JPAlbum: Codable, Equatable, Identifiable {
+    public let id: Int
     let userId: Int
-    let id: Int
     let title: String
 }

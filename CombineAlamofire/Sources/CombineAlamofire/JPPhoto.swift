@@ -7,9 +7,9 @@
 
 import Foundation
 
-public struct JPPhoto: Codable, Equatable {
+public struct JPPhoto: Codable, Equatable, Identifiable {
+    public let id: Int
     let albumId: Int
-    let id: Int
     let title: String
     let url: URL
     let thumbnailUrl: URL

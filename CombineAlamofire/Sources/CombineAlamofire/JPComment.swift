@@ -7,9 +7,9 @@
 
 import Foundation
 
-public struct JPComment: Codable, Equatable {
+public struct JPComment: Codable, Equatable, Identifiable {
+    public let id: Int
     let postId: Int
-    let id: Int
     let name: String
     let email: MCEmailAddress
     let body: String

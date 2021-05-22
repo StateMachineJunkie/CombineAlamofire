@@ -7,9 +7,9 @@
 
 import Foundation
 
-public struct JPToDo: Codable, Equatable {
+public struct JPToDo: Codable, Equatable, Identifiable {
+    public let id: Int
     let userId: Int
-    let id: Int
     let title: String
     let completed: Bool
 }
