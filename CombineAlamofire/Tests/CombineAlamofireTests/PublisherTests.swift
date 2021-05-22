@@ -6,10 +6,19 @@
 //
 
 import Combine
-import XCTest
 import CombineAlamofire
+import XCTest
 
 final class PublisherTests: XCTestCase {
+
+    static var allTests = [
+        ("testAlbumsPublisher", testAlbumsPublisher),
+        ("testCommentsPublisher", testCommentsPublisher),
+        ("testPhotosPublisher", testPhotosPublisher),
+        ("testPostsPublisher", testPostsPublisher),
+        ("testToDosPublisher", testToDosPublisher)
+    ]
+
     func testAlbumsPublisher() {
         let expectation = XCTestExpectation(description: "Fetch albums via publisher")
         let publisher = CombineAlamofire.shared.getAlbumsPublisher()
