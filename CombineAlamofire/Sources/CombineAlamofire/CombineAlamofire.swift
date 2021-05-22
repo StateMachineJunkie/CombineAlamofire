@@ -18,9 +18,11 @@ public class CombineAlamofire {
     public init() {
         // For now, we disable cert-pinning but it is a feature we want in the future.
         // Ultimately, we need to disable this for debugging in certain build configurations.
-        let evaluators: [String: ServerTrustEvaluating] = [ baseURL.absoluteString : DisabledTrustEvaluator()]
+        let evaluators: [String: ServerTrustEvaluating] = [ baseURL.host! : DisabledTrustEvaluator()]
         let serverTrustManager = ServerTrustManager(allHostsMustBeEvaluated: false, evaluators: evaluators)
-        let session = Session(startRequestsImmediately: true, serverTrustManager: serverTrustManager)
+        // We also disable caching while developing our solution.
+        let cacher = ResponseCacher(behavior: .doNotCache)
+        let session = Session(startRequestsImmediately: true, serverTrustManager: serverTrustManager, cachedResponseHandler: cacher)
         self.session = session
     }
 
