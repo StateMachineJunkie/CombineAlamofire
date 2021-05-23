@@ -51,10 +51,15 @@ final class JPAlbumTests: XCTestCase {
             let data = try encoder.encode([album1, album2])
 
             let decoder = JSONDecoder()
-            let jpPhotos = try decoder.decode([JPAlbum].self, from: data)
-            XCTAssertEqual(jpPhotos, [album1, album2])
+            let jpAlbums = try decoder.decode([JPAlbum].self, from: data)
+            XCTAssertEqual(jpAlbums, [album1, album2])
         } catch {
             XCTFail(error.localizedDescription)
         }
     }
+
+    static var allTests = [
+        ("testJPAlbumDecode", testJPAlbumDecode),
+        ("testJPAlbumEncode", testJPAlbumEncode)
+    ]
 }
