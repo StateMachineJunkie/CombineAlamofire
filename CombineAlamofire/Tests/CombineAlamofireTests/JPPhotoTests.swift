@@ -69,4 +69,9 @@ final class JPPhotoTests: XCTestCase {
             XCTFail(error.localizedDescription)
         }
     }
+
+    static var allTests = [
+        ("testJPPhotoDecode", testJPPhotoDecode),
+        ("testJPPhotoEncode", testJPPhotoEncode)
+    ]
 }

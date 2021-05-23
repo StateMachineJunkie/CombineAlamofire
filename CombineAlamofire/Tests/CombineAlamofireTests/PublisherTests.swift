@@ -11,14 +11,6 @@ import XCTest
 
 final class PublisherTests: XCTestCase {
 
-    static var allTests = [
-        ("testAlbumsPublisher", testAlbumsPublisher),
-        ("testCommentsPublisher", testCommentsPublisher),
-        ("testPhotosPublisher", testPhotosPublisher),
-        ("testPostsPublisher", testPostsPublisher),
-        ("testToDosPublisher", testToDosPublisher)
-    ]
-
     func testAlbumsPublisher() {
         let expectation = XCTestExpectation(description: "Fetch albums via publisher")
         let publisher = CombineAlamofire.shared.getAlbumsPublisher()
@@ -83,4 +75,12 @@ final class PublisherTests: XCTestCase {
         }.store(in: &subscriptions)
         wait(for: [expectation], timeout: 10.0)
     }
+
+    static var allTests = [
+        ("testAlbumsPublisher", testAlbumsPublisher),
+        ("testCommentsPublisher", testCommentsPublisher),
+        ("testPhotosPublisher", testPhotosPublisher),
+        ("testPostsPublisher", testPostsPublisher),
+        ("testToDosPublisher", testToDosPublisher)
+    ]
 }
