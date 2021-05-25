@@ -47,6 +47,10 @@ public class CombineAlamofire {
     }
 
     public func getUsersPublisher() -> DataResponsePublisher<[JPUser]> {
-        return session.request(baseURL).publishDecodable(type: [JPUser].self)
+        return session.request(baseURL.appendingPathComponent("users")).publishDecodable(type: [JPUser].self)
+    }
+
+    public func getPublisher<Element: Decodable>() -> DataResponsePublisher<[Element]> {
+        return session.request(baseURL).publishDecodable(type: [Element].self)
     }
 }

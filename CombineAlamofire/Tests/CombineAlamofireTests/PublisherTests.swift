@@ -76,11 +76,25 @@ final class PublisherTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    func testUsersPublisher() {
+        let expectation = XCTestExpectation(description: "Fetch user via publisher")
+        let publisher = CombineAlamofire.shared.getUsersPublisher()
+
+        var subscriptions = Set<AnyCancellable>()
+
+        publisher.sink { response in
+            XCTAssertNotNil((try? response.result.get()))
+            expectation.fulfill()
+        }.store(in: &subscriptions)
+        wait(for: [expectation], timeout: 10.0)
+    }
+
     static var allTests = [
         ("testAlbumsPublisher", testAlbumsPublisher),
         ("testCommentsPublisher", testCommentsPublisher),
         ("testPhotosPublisher", testPhotosPublisher),
         ("testPostsPublisher", testPostsPublisher),
-        ("testToDosPublisher", testToDosPublisher)
+        ("testToDosPublisher", testToDosPublisher),
+        ("testUsersPublisher", testUsersPublisher)
     ]
 }

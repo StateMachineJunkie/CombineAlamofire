@@ -9,6 +9,15 @@
           "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
           "version": "5.4.3"
         }
+      },
+      {
+        "package": "Eureka",
+        "repositoryURL": "https://github.com/xmartlabs/Eureka",
+        "state": {
+          "branch": null,
+          "revision": "523af88efc83cdaf39b415446be1ca1529f5664d",
+          "version": "5.3.3"
+        }
       }
     ]
   },
