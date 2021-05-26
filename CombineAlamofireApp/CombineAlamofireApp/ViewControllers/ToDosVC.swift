@@ -10,13 +10,20 @@ import UIKit
 
 class ToDosVC: UITableViewController {
 
-    private let subscriptions = Set<AnyCancellable>()
+    private var subscriptions = Set<AnyCancellable>()
     private let viewModel = ToDosVM()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Don't display rows past last valid user value.
+        tableView.tableFooterView = UIView()
+
+        // When the view-model changes, reload the table-view.
+        viewModel.todos.sink { comments in
+            self.tableView.reloadData()
+        }
+        .store(in: &subscriptions)
     }
     
     // MARK: - UITableViewController Overrides
@@ -25,6 +32,8 @@ class ToDosVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as! ToDoCell
+        cell.configure(with: viewModel.todos.value[indexPath.row])
+        return cell
     }
 }

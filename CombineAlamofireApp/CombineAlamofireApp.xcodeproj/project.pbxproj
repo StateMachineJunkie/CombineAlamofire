@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575685265DA1AF001D5983 /* ToDoCell.swift */; };
+		5C575688265DA727001D5983 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575687265DA727001D5983 /* AlbumCell.swift */; };
+		5C57568A265DAE03001D5983 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575689265DAE03001D5983 /* PhotoCell.swift */; };
 		5C961ECB2656CEEF0093F89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961ECA2656CEEF0093F89A /* AppDelegate.swift */; };
 		5C961ECD2656CEEF0093F89A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */; };
 		5C961ED22656CEEF0093F89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C961ED02656CEEF0093F89A /* Main.storyboard */; };
@@ -52,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C575685265DA1AF001D5983 /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		5C575687265DA727001D5983 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		5C575689265DAE03001D5983 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		5C961EC72656CEEF0093F89A /* CombineAlamofireApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineAlamofireApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C961ECA2656CEEF0093F89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,7 +210,10 @@
 		5CC70117265C62C700C049F7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5C575687265DA727001D5983 /* AlbumCell.swift */,
 				5CC70118265C62FC00C049F7 /* CommentCell.swift */,
+				5C575689265DAE03001D5983 /* PhotoCell.swift */,
+				5C575685265DA1AF001D5983 /* ToDoCell.swift */,
 				5CC7011A265C72D300C049F7 /* UserCell.swift */,
 			);
 			path = Views;
@@ -356,6 +365,7 @@
 				5CC7011B265C72D300C049F7 /* UserCell.swift in Sources */,
 				5CC70107265C36EC00C049F7 /* PhotosVM.swift in Sources */,
 				5CC700FF265C331F00C049F7 /* UsersVM.swift in Sources */,
+				5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */,
 				5CC700F8265C2B5000C049F7 /* CommentsVM.swift in Sources */,
 				5CC7010C265C461000C049F7 /* AlbumsVC.swift in Sources */,
 				5CC70115265C5FA600C049F7 /* PostsVC.swift in Sources */,
@@ -364,7 +374,9 @@
 				5CC70112265C5FA600C049F7 /* PhotosVC.swift in Sources */,
 				5CC70105265C36EC00C049F7 /* ToDosVM.swift in Sources */,
 				5C961ECB2656CEEF0093F89A /* AppDelegate.swift in Sources */,
+				5C57568A265DAE03001D5983 /* PhotoCell.swift in Sources */,
 				5C961ECD2656CEEF0093F89A /* SceneDelegate.swift in Sources */,
+				5C575688265DA727001D5983 /* AlbumCell.swift in Sources */,
 				5CC70119265C62FC00C049F7 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

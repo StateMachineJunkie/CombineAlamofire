@@ -10,13 +10,20 @@ import UIKit
 
 class PostsVC: UITableViewController {
 
-    private let subscriptions = Set<AnyCancellable>()
+    private var subscriptions = Set<AnyCancellable>()
     private let viewModel = PostsVM()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Don't display rows past last valid user value.
+        tableView.tableFooterView = UIView()
+
+        // When the view-model changes, reload the table-view.
+        viewModel.posts.sink { comments in
+            self.tableView.reloadData()
+        }
+        .store(in: &subscriptions)
     }
     
     // MARK: - UITableViewController Overrides
