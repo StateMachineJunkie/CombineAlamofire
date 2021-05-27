@@ -294,7 +294,6 @@
                                         <constraint firstItem="JKQ-TZ-aaw" firstAttribute="leading" secondItem="p5z-AP-WKA" secondAttribute="leading" id="pIz-4O-D9h"/>
                                         <constraint firstItem="5qE-sA-1Oo" firstAttribute="top" secondItem="p5z-AP-WKA" secondAttribute="topMargin" id="q8d-oD-iFN"/>
                                         <constraint firstItem="XN3-FK-YDk" firstAttribute="leading" secondItem="JKQ-TZ-aaw" secondAttribute="trailing" constant="8" symbolic="YES" id="tZA-6G-P3I"/>
-                                        <constraint firstAttribute="bottom" secondItem="JKQ-TZ-aaw" secondAttribute="bottom" id="zHo-Xa-1Ch"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -359,10 +358,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="mct-v1-u0P" customClass="CommentCell" customModule="CombineAlamofireApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="98.666664123535156"/>
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="99.666664123535156"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mct-v1-u0P" id="ORS-OA-Us9">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="98.666664123535156"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="99.666664123535156"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="&lt;postId&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7N-ZP-Yod">
@@ -378,13 +377,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd0-QU-J2y">
-                                            <rect key="frame" x="20" y="33" width="350" height="20.666666666666671"/>
+                                            <rect key="frame" x="20" y="33" width="350" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" layoutMarginsFollowReadableWidth="YES" text="&lt;body&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld7-0H-MwM">
-                                            <rect key="frame" x="20" y="61.666666666666657" width="350" height="17"/>
+                                            <rect key="frame" x="20" y="62.666666666666657" width="350" height="17"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

@@ -5,10 +5,17 @@
 //  Created by Michael A. Crawford on 5/24/21.
 //
 
+import Alamofire
 import Combine
 import CombineAlamofire
 
-class ViewModel<Element: Codable> {
+
+protocol FetchingViewModel {
+    var isFetching: CurrentValueSubject<Bool, Never> { get }
+    func fetchElements() -> Void
+}
+
+class ViewModel<Element: Codable>: FetchingViewModel {
 
     private var subscriptions = Set<AnyCancellable>()
 
@@ -22,28 +29,20 @@ class ViewModel<Element: Codable> {
     var addNewElement = PassthroughSubject<Element, Never>()
 
     init() {
-        #if false
-        addNewComment
-            .sink { x in
-                print(x)
-            } receiveValue: { [unowned self] newElement in
-                self.comments.send(self.comments.value + [newComment])
-            }.store(in: &subscriptions)
-        #else
         addNewElement
             .sink { [unowned self] newElement in
                 self.elements.send(self.elements.value + [newElement])
             }
             .store(in: &subscriptions)
-        #endif
         fetchElements()
     }
 
     /// Acts as a signal to reload the in-memory elements cache.
     func fetchElements() {
+        guard isFetching.value == false else { return }
         isFetching.send(true)
-        #if false
-        CombineAlamofire.shared.getPublisher()
+        let publisher: DataResponsePublisher<[Element]> = CombineAlamofire.shared.getPublisher()
+        publisher
             .sink { [unowned self] response in
                 switch response.result {
                 case let .success(elements):
@@ -54,6 +53,5 @@ class ViewModel<Element: Codable> {
                 self.isFetching.send(false)
             }
             .store(in: &subscriptions)
-        #endif
     }
 }
