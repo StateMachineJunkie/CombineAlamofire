@@ -15,11 +15,6 @@ class ToDoCell: UITableViewCell {
     @IBOutlet weak var toDoIdLabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     // MARK: - Public Methods
     func configure(with todo: JPToDo) {
         completedImageView.isHighlighted	= todo.completed

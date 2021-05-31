@@ -20,11 +20,6 @@ class PhotoCell: UITableViewCell {
 
     private var subscriptions = Set<AnyCancellable>()
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     override func prepareForReuse() {
         subscriptions.forEach { anyCancellable in
             anyCancellable.cancel()
@@ -32,12 +27,6 @@ class PhotoCell: UITableViewCell {
         albumLabel.text = ""
         titleLabel.text = ""
         photoIdLabel.text = ""
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     // MARK: - Public Methods
