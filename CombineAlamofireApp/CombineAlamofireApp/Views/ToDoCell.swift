@@ -20,12 +20,6 @@ class ToDoCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
     // MARK: - Public Methods
     func configure(with todo: JPToDo) {
         completedImageView.isHighlighted	= todo.completed

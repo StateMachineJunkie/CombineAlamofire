@@ -15,7 +15,7 @@ protocol FetchingViewModel {
     func fetchElements() -> Void
 }
 
-class ViewModel<Element: Codable>: FetchingViewModel {
+class ViewModel<Element: Codable & Equatable>: FetchingViewModel {
 
     private var subscriptions = Set<AnyCancellable>()
 
@@ -28,13 +28,25 @@ class ViewModel<Element: Codable>: FetchingViewModel {
     // Accepts newly created element; adds to current store.
     var addNewElement = PassthroughSubject<Element, Never>()
 
+    // Removes existing element from current store.
+    var removeElementAtIndex = PassthroughSubject<Int, Never>()
+
     init() {
+        // These signals should actually modify the elements on the back-end but
+        // for our purposes updating local storage is good enough.
         addNewElement
             .sink { [unowned self] newElement in
                 self.elements.send(self.elements.value + [newElement])
             }
             .store(in: &subscriptions)
-        fetchElements()
+
+        removeElementAtIndex
+            .sink { [unowned self] index in
+                var mutableElements = self.elements.value
+                mutableElements.remove(at: index)
+                self.elements.send(mutableElements)
+            }
+            .store(in: &subscriptions)
     }
 
     /// Acts as a signal to reload the in-memory elements cache.
