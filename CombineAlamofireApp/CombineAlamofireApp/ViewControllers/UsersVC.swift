@@ -15,6 +15,7 @@ class UsersVC: UITableViewController {
     private var subscriptions = Set<AnyCancellable>()
     private let viewModel = ViewModel<JPUser>()
 
+    // MARK: - UIViewController Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
@@ -43,8 +44,11 @@ class UsersVC: UITableViewController {
     }
 
     @objc func didTapRightBarButton(_ sender: UIBarButtonItem) {
-        // Launch add-user form
-        NSLog("didTapRightBarButton")
+        // Present add-user form.
+        let controller = AddUserForm(with: viewModel)
+        let navController = UINavigationController(rootViewController: controller)
+        navController.modalPresentationStyle = .formSheet
+        present(navController, animated: true)
     }
 
     // MARK: - UITableViewDataSource Overrides

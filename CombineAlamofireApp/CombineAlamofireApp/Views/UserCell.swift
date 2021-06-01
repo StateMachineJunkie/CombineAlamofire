@@ -18,10 +18,10 @@ class UserCell: UITableViewCell {
 
     // MARK: - Public Methods
     func configure(with user: JPUser) {
-        companyNameLabel.text	= user.company.name
+        companyNameLabel.text	= user.company?.name
         emailLabel.text		    = user.email.rawValue
         userIdLabel.text    	= "#\(user.id.rawValue)"
         usernameLabel.text      = user.username
-		websiteLabel.text		= user.website.absoluteString
+		websiteLabel.text		= user.website?.absoluteString
     }
 }
