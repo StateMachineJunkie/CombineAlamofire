@@ -11,40 +11,35 @@ public class CombineAlamofire {
     private var session: Alamofire.Session!
     private let subscriptions = Set<AnyCancellable>()
     private let baseURL = URL(string: "https://jsonplaceholder.typicode.com")!
+    private let pathComponents: [String: String] = [
+        "JPAlbum.Type": "albums",
+        "JPComment.Type": "comments",
+        "JPPost.Type": "posts",
+        "JPPhoto.Type": "photos",
+        "JPToDo.Type": "todos",
+        "JPUser.Type": "users"
+    ]
 
     /// Initializer.
     ///
     /// Initialize internal Alamofire session and publishers.
     public init() {
         // For now, we disable cert-pinning but it is a feature we want in the future.
-        // Ultimately, we need to disable this for debugging in certain build configurations.
-        let evaluators: [String: ServerTrustEvaluating] = [ baseURL.absoluteString : DisabledTrustEvaluator()]
+        // Ultimately, we need cert-pinning to be enabled and disabled based on
+        // the build configuration being used. This will provide the added security
+        // we want while not hindering the debugging process.
+        let evaluators: [String: ServerTrustEvaluating] = [baseURL.host! : DisabledTrustEvaluator()]
         let serverTrustManager = ServerTrustManager(allHostsMustBeEvaluated: false, evaluators: evaluators)
-        let session = Session(startRequestsImmediately: true, serverTrustManager: serverTrustManager)
+        // We also disable caching while developing our solution.
+        let cacher = ResponseCacher(behavior: .doNotCache)
+        let session = Session(startRequestsImmediately: true, serverTrustManager: serverTrustManager, cachedResponseHandler: cacher)
         self.session = session
     }
 
-    public func getAlbumsPublisher() -> DataResponsePublisher<[JPAlbum]> {
-        return session.request(baseURL.appendingPathComponent("albums")).publishDecodable(type: [JPAlbum].self)
-    }
-
-    public func getCommentsPublisher() -> DataResponsePublisher<[JPComment]> {
-        return session.request(baseURL.appendingPathComponent("comments")).publishDecodable(type: [JPComment].self)
-    }
-
-    public func getPostsPublisher() -> DataResponsePublisher<[JPPost]> {
-        return session.request(baseURL.appendingPathComponent("posts")).publishDecodable(type: [JPPost].self)
-    }
-
-    public func getPhotosPublisher() -> DataResponsePublisher<[JPPhoto]> {
-        return session.request(baseURL.appendingPathComponent("photos")).publishDecodable(type: [JPPhoto].self)
-    }
-
-    public func getToDosPublisher() -> DataResponsePublisher<[JPToDo]> {
-        return session.request(baseURL.appendingPathComponent("todos")).publishDecodable(type: [JPToDo].self)
-    }
-
-    public func getUsersPublisher() -> DataResponsePublisher<[JPUser]> {
-        return session.request(baseURL).publishDecodable(type: [JPUser].self)
+    public func getPublisher<Element: Decodable>() -> DataResponsePublisher<[Element]> {
+        let type = type(of: Element.self)
+        let typeName = "\(type)"
+        let path = pathComponents[typeName]!
+        return session.request(baseURL.appendingPathComponent(path)).publishDecodable(type: [Element].self)
     }
 }

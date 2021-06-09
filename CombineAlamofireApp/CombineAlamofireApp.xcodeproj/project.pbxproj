@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2B155726620C7500F48439 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B155626620C7500F48439 /* ImageCache.swift */; };
+		5C2B15592662DEE100F48439 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B15582662DEE100F48439 /* ImageLoader.swift */; };
+		5C2B155C2665A00300F48439 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B155B2665A00300F48439 /* UITableViewExtensions.swift */; };
+		5C2B155F2665A55300F48439 /* AddUserForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B155E2665A55300F48439 /* AddUserForm.swift */; };
+		5C2B15612665D23600F48439 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B15602665D23600F48439 /* UIViewControllerExtension.swift */; };
+		5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575685265DA1AF001D5983 /* ToDoCell.swift */; };
+		5C575688265DA727001D5983 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575687265DA727001D5983 /* AlbumCell.swift */; };
+		5C57568A265DAE03001D5983 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575689265DAE03001D5983 /* PhotoCell.swift */; };
 		5C961ECB2656CEEF0093F89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961ECA2656CEEF0093F89A /* AppDelegate.swift */; };
 		5C961ECD2656CEEF0093F89A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */; };
-		5C961ECF2656CEEF0093F89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961ECE2656CEEF0093F89A /* ViewController.swift */; };
 		5C961ED22656CEEF0093F89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C961ED02656CEEF0093F89A /* Main.storyboard */; };
 		5C961ED42656CEF00093F89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C961ED32656CEF00093F89A /* Assets.xcassets */; };
 		5C961ED72656CEF00093F89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C961ED52656CEF00093F89A /* LaunchScreen.storyboard */; };
@@ -17,6 +24,16 @@
 		5C961EED2656CEF10093F89A /* CombineAlamofireAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961EEC2656CEF10093F89A /* CombineAlamofireAppUITests.swift */; };
 		5C961EFC2656CF110093F89A /* CombineAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5C961EFB2656CF110093F89A /* CombineAlamofire */; };
 		5C961F002656D1280093F89A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5C961EFF2656D1280093F89A /* Alamofire */; };
+		5CC700F52659F70500C049F7 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC700F42659F70500C049F7 /* Eureka */; };
+		5CC70109265C3DD500C049F7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC70108265C3DD500C049F7 /* ViewModel.swift */; };
+		5CC7010C265C461000C049F7 /* AlbumsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7010B265C461000C049F7 /* AlbumsVC.swift */; };
+		5CC70112265C5FA600C049F7 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7010D265C5FA600C049F7 /* PhotosVC.swift */; };
+		5CC70113265C5FA600C049F7 /* ToDosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7010E265C5FA600C049F7 /* ToDosVC.swift */; };
+		5CC70114265C5FA600C049F7 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7010F265C5FA600C049F7 /* UsersVC.swift */; };
+		5CC70115265C5FA600C049F7 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC70110265C5FA600C049F7 /* PostsVC.swift */; };
+		5CC70116265C5FA600C049F7 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC70111265C5FA600C049F7 /* CommentsVC.swift */; };
+		5CC70119265C62FC00C049F7 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC70118265C62FC00C049F7 /* CommentCell.swift */; };
+		5CC7011B265C72D300C049F7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7011A265C72D300C049F7 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C2B155626620C7500F48439 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		5C2B15582662DEE100F48439 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		5C2B155B2665A00300F48439 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		5C2B155E2665A55300F48439 /* AddUserForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserForm.swift; sourceTree = "<group>"; };
+		5C2B15602665D23600F48439 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5C575685265DA1AF001D5983 /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		5C575687265DA727001D5983 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		5C575689265DAE03001D5983 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		5C961EC72656CEEF0093F89A /* CombineAlamofireApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineAlamofireApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C961ECA2656CEEF0093F89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C961ECE2656CEEF0093F89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C961ED12656CEEF0093F89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C961ED32656CEF00093F89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C961ED62656CEF00093F89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +76,15 @@
 		5C961EEC2656CEF10093F89A /* CombineAlamofireAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAlamofireAppUITests.swift; sourceTree = "<group>"; };
 		5C961EEE2656CEF10093F89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C961EFD2656CF440093F89A /* CombineAlamofire.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = CombineAlamofire.playground; path = ../CombineAlamofire.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5CC70108265C3DD500C049F7 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5CC7010B265C461000C049F7 /* AlbumsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsVC.swift; sourceTree = "<group>"; };
+		5CC7010D265C5FA600C049F7 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		5CC7010E265C5FA600C049F7 /* ToDosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDosVC.swift; sourceTree = "<group>"; };
+		5CC7010F265C5FA600C049F7 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		5CC70110265C5FA600C049F7 /* PostsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		5CC70111265C5FA600C049F7 /* CommentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		5CC70118265C62FC00C049F7 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		5CC7011A265C72D300C049F7 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +94,7 @@
 			files = (
 				5C961EFC2656CF110093F89A /* CombineAlamofire in Frameworks */,
 				5C961F002656D1280093F89A /* Alamofire in Frameworks */,
+				5CC700F52659F70500C049F7 /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C2B155526620C4600F48439 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C2B155626620C7500F48439 /* ImageCache.swift */,
+				5C2B15582662DEE100F48439 /* ImageLoader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5C2B155A26659FD800F48439 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C2B155B2665A00300F48439 /* UITableViewExtensions.swift */,
+				5C2B15602665D23600F48439 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C2B155D2665A52400F48439 /* EurekaForms */ = {
+			isa = PBXGroup;
+			children = (
+				5C2B155E2665A55300F48439 /* AddUserForm.swift */,
+			);
+			path = EurekaForms;
+			sourceTree = "<group>";
+		};
 		5C961EBE2656CEEF0093F89A = {
 			isa = PBXGroup;
 			children = (
@@ -106,13 +166,18 @@
 		5C961EC92656CEEF0093F89A /* CombineAlamofireApp */ = {
 			isa = PBXGroup;
 			children = (
+				5C2B155D2665A52400F48439 /* EurekaForms */,
 				5C961ECA2656CEEF0093F89A /* AppDelegate.swift */,
-				5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */,
-				5C961ECE2656CEEF0093F89A /* ViewController.swift */,
-				5C961ED02656CEEF0093F89A /* Main.storyboard */,
 				5C961ED32656CEF00093F89A /* Assets.xcassets */,
-				5C961ED52656CEF00093F89A /* LaunchScreen.storyboard */,
+				5C2B155526620C4600F48439 /* Components */,
+				5C2B155A26659FD800F48439 /* Extensions */,
 				5C961ED82656CEF00093F89A /* Info.plist */,
+				5C961ED52656CEF00093F89A /* LaunchScreen.storyboard */,
+				5C961ED02656CEEF0093F89A /* Main.storyboard */,
+				5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */,
+				5CC7010A265C45E600C049F7 /* ViewControllers */,
+				5CC700F6265C2B2A00C049F7 /* ViewModels */,
+				5CC70117265C62C700C049F7 /* Views */,
 			);
 			path = CombineAlamofireApp;
 			sourceTree = "<group>";
@@ -142,6 +207,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5CC700F6265C2B2A00C049F7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5CC70108265C3DD500C049F7 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5CC7010A265C45E600C049F7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CC7010B265C461000C049F7 /* AlbumsVC.swift */,
+				5CC70111265C5FA600C049F7 /* CommentsVC.swift */,
+				5CC7010D265C5FA600C049F7 /* PhotosVC.swift */,
+				5CC70110265C5FA600C049F7 /* PostsVC.swift */,
+				5CC7010E265C5FA600C049F7 /* ToDosVC.swift */,
+				5CC7010F265C5FA600C049F7 /* UsersVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5CC70117265C62C700C049F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C575687265DA727001D5983 /* AlbumCell.swift */,
+				5CC70118265C62FC00C049F7 /* CommentCell.swift */,
+				5C575689265DAE03001D5983 /* PhotoCell.swift */,
+				5C575685265DA1AF001D5983 /* ToDoCell.swift */,
+				5CC7011A265C72D300C049F7 /* UserCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +259,7 @@
 			packageProductDependencies = (
 				5C961EFB2656CF110093F89A /* CombineAlamofire */,
 				5C961EFF2656D1280093F89A /* Alamofire */,
+				5CC700F42659F70500C049F7 /* Eureka */,
 			);
 			productName = CombineAlamofireApp;
 			productReference = 5C961EC72656CEEF0093F89A /* CombineAlamofireApp.app */;
@@ -235,6 +334,7 @@
 			mainGroup = 5C961EBE2656CEEF0093F89A;
 			packageReferences = (
 				5C961EFE2656D1280093F89A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5CC700F32659F70500C049F7 /* XCRemoteSwiftPackageReference "Eureka" */,
 			);
 			productRefGroup = 5C961EC82656CEEF0093F89A /* Products */;
 			projectDirPath = "";
@@ -279,9 +379,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C961ECF2656CEEF0093F89A /* ViewController.swift in Sources */,
+				5C2B155726620C7500F48439 /* ImageCache.swift in Sources */,
+				5CC70109265C3DD500C049F7 /* ViewModel.swift in Sources */,
+				5CC70113265C5FA600C049F7 /* ToDosVC.swift in Sources */,
+				5CC70114265C5FA600C049F7 /* UsersVC.swift in Sources */,
+				5CC7011B265C72D300C049F7 /* UserCell.swift in Sources */,
+				5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */,
+				5C2B155F2665A55300F48439 /* AddUserForm.swift in Sources */,
+				5C2B155C2665A00300F48439 /* UITableViewExtensions.swift in Sources */,
+				5C2B15592662DEE100F48439 /* ImageLoader.swift in Sources */,
+				5CC7010C265C461000C049F7 /* AlbumsVC.swift in Sources */,
+				5CC70115265C5FA600C049F7 /* PostsVC.swift in Sources */,
+				5C2B15612665D23600F48439 /* UIViewControllerExtension.swift in Sources */,
+				5CC70116265C5FA600C049F7 /* CommentsVC.swift in Sources */,
+				5CC70112265C5FA600C049F7 /* PhotosVC.swift in Sources */,
 				5C961ECB2656CEEF0093F89A /* AppDelegate.swift in Sources */,
+				5C57568A265DAE03001D5983 /* PhotoCell.swift in Sources */,
 				5C961ECD2656CEEF0093F89A /* SceneDelegate.swift in Sources */,
+				5C575688265DA727001D5983 /* AlbumCell.swift in Sources */,
+				5CC70119265C62FC00C049F7 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +740,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		5CC700F32659F70500C049F7 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -635,6 +759,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5C961EFE2656D1280093F89A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		5CC700F42659F70500C049F7 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CC700F32659F70500C049F7 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

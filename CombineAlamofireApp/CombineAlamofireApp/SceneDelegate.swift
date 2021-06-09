@@ -31,14 +31,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
-        let evaluators = ["httpbin.org": DisabledTrustEvaluator()]
-        let trustManager = ServerTrustManager(evaluators: evaluators)
-        let session = Session(serverTrustManager: trustManager)
-
-        session.request("https://httpbin.org/get").response { response in
-            debugPrint(response)
-        }
-        self.session = session
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
