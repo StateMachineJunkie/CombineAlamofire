@@ -20,8 +20,12 @@ public struct AlbumId: Codable, Equatable, Hashable, RawRepresentable {
     }
 }
 
+/// Photo album model.
 public struct JPAlbum: Codable, Equatable, Identifiable {
+    /// Unique identifier.
     public let id: AlbumId
+    /// Unique identifier of the user owning this album value.
     public let userId: UserId
+    /// Title for this album value.
     public let title: String
 }

@@ -5,22 +5,23 @@
 //  Created by Michael A. Crawford on 5/28/21.
 //
 
+import os.log
 import UIKit
 
 class ImageCache: NSObject {
 
-    private let cache = NSCache<AnyObject, UIImage>()
+    private let cache = NSCache<NSString, UIImage>()
 
     func image(for url: URL) -> UIImage? {
-        return cache.object(forKey: url as AnyObject)
+        return cache.object(forKey: url.absoluteString as NSString)
     }
 
     func removeImage(for url: URL) {
-        cache.removeObject(forKey: url as AnyObject)
+        cache.removeObject(forKey: url.absoluteString as NSString)
     }
 
     func setImage(_ image: UIImage, for url: URL) {
-        cache.setObject(image, forKey: url as AnyObject)
+        cache.setObject(image, forKey: url.absoluteString as NSString)
     }
 }
 

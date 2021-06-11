@@ -9,6 +9,7 @@ import Combine
 import CombineAlamofire
 import UIKit
 
+@MainActor
 class PhotoCell: UITableViewCell {
 
     @IBOutlet weak var albumLabel: UILabel!
@@ -18,12 +19,10 @@ class PhotoCell: UITableViewCell {
 
     private static var imageLoader = ImageLoader()
 
-    private var subscriptions = Set<AnyCancellable>()
+    private var task: Task.Handle<(), Never>?
 
     override func prepareForReuse() {
-        subscriptions.forEach { anyCancellable in
-            anyCancellable.cancel()
-        }
+        task?.cancel()
         albumLabel.text = ""
         titleLabel.text = ""
         photoIdLabel.text = ""
@@ -36,11 +35,10 @@ class PhotoCell: UITableViewCell {
 		photoIdLabel.text					= "#\(photo.id.rawValue)"
         thumbnailImageView.image            = UIImage(systemName: "photo")
 
-        PhotoCell.imageLoader.loadImage(from: photo.thumbnailUrl)
-            .sink { [weak self] image in
-                guard let image = image else { return }
-                self?.thumbnailImageView.image = image
+        task = async {
+            if let image = await PhotoCell.imageLoader.loadImage(from: photo.thumbnailUrl) {
+                thumbnailImageView.image = image
             }
-            .store(in: &subscriptions)
+        }
     }
 }
