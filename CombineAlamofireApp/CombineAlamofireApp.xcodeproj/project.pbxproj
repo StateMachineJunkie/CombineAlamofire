@@ -12,6 +12,17 @@
 		5C2B155C2665A00300F48439 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B155B2665A00300F48439 /* UITableViewExtensions.swift */; };
 		5C2B155F2665A55300F48439 /* AddUserForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B155E2665A55300F48439 /* AddUserForm.swift */; };
 		5C2B15612665D23600F48439 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B15602665D23600F48439 /* UIViewControllerExtension.swift */; };
+		5C3C899D2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C899C2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift */; };
+		5C3C899F2677CA8100648193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C899E2677CA8100648193 /* ContentView.swift */; };
+		5C3C89A12677CA8200648193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C89A02677CA8200648193 /* Assets.xcassets */; };
+		5C3C89A42677CA8200648193 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C89A32677CA8200648193 /* Preview Assets.xcassets */; };
+		5C3C89AA2677CAB400648193 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89A92677CAB400648193 /* UserListView.swift */; };
+		5C3C89AE2677E57200648193 /* CombineAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3C89AD2677E57200648193 /* CombineAlamofire */; };
+		5C3C89B02677FA6A00648193 /* ElementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89AF2677FA6A00648193 /* ElementList.swift */; };
+		5C3C89B5267818AE00648193 /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89B1267818AE00648193 /* AlbumListView.swift */; };
+		5C3C89B6267818AE00648193 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89B2267818AE00648193 /* PhotoListView.swift */; };
+		5C3C89B7267818AE00648193 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89B3267818AE00648193 /* ToDoListView.swift */; };
+		5C3C89B8267818AE00648193 /* CommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89B4267818AE00648193 /* CommentListView.swift */; };
 		5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575685265DA1AF001D5983 /* ToDoCell.swift */; };
 		5C575688265DA727001D5983 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575687265DA727001D5983 /* AlbumCell.swift */; };
 		5C57568A265DAE03001D5983 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575689265DAE03001D5983 /* PhotoCell.swift */; };
@@ -59,6 +70,18 @@
 		5C2B155B2665A00300F48439 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		5C2B155E2665A55300F48439 /* AddUserForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserForm.swift; sourceTree = "<group>"; };
 		5C2B15602665D23600F48439 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5C3C899A2677CA8100648193 /* CombineAlamofireSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineAlamofireSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3C899C2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAlamofireSwiftUIApp.swift; sourceTree = "<group>"; };
+		5C3C899E2677CA8100648193 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C3C89A02677CA8200648193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C3C89A32677CA8200648193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C3C89A52677CA8200648193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C3C89A92677CAB400648193 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		5C3C89AF2677FA6A00648193 /* ElementList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementList.swift; sourceTree = "<group>"; };
+		5C3C89B1267818AE00648193 /* AlbumListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
+		5C3C89B2267818AE00648193 /* PhotoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		5C3C89B3267818AE00648193 /* ToDoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		5C3C89B4267818AE00648193 /* CommentListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentListView.swift; sourceTree = "<group>"; };
 		5C575685265DA1AF001D5983 /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		5C575687265DA727001D5983 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		5C575689265DAE03001D5983 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
@@ -88,6 +111,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C3C89972677CA8100648193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3C89AE2677E57200648193 /* CombineAlamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C961EC42656CEEF0093F89A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +172,48 @@
 			path = EurekaForms;
 			sourceTree = "<group>";
 		};
+		5C3C899B2677CA8100648193 /* CombineAlamofireSwiftUIApp */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C89BA26781B3B00648193 /* ViewModels */,
+				5C3C89B926781AFC00648193 /* ListViews */,
+				5C3C89A02677CA8200648193 /* Assets.xcassets */,
+				5C3C899C2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift */,
+				5C3C899E2677CA8100648193 /* ContentView.swift */,
+				5C3C89A52677CA8200648193 /* Info.plist */,
+				5C3C89A22677CA8200648193 /* Preview Content */,
+			);
+			path = CombineAlamofireSwiftUIApp;
+			sourceTree = "<group>";
+		};
+		5C3C89A22677CA8200648193 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C89A32677CA8200648193 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C3C89B926781AFC00648193 /* ListViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C89B1267818AE00648193 /* AlbumListView.swift */,
+				5C3C89B4267818AE00648193 /* CommentListView.swift */,
+				5C3C89B2267818AE00648193 /* PhotoListView.swift */,
+				5C3C89B3267818AE00648193 /* ToDoListView.swift */,
+				5C3C89A92677CAB400648193 /* UserListView.swift */,
+			);
+			path = ListViews;
+			sourceTree = "<group>";
+		};
+		5C3C89BA26781B3B00648193 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C89AF2677FA6A00648193 /* ElementList.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		5C961EBE2656CEEF0093F89A = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +221,7 @@
 				5C961EC92656CEEF0093F89A /* CombineAlamofireApp */,
 				5C961EE02656CEF10093F89A /* CombineAlamofireAppTests */,
 				5C961EEB2656CEF10093F89A /* CombineAlamofireAppUITests */,
+				5C3C899B2677CA8100648193 /* CombineAlamofireSwiftUIApp */,
 				5C961EC82656CEEF0093F89A /* Products */,
 				5C961EFA2656CF110093F89A /* Frameworks */,
 			);
@@ -159,6 +233,7 @@
 				5C961EC72656CEEF0093F89A /* CombineAlamofireApp.app */,
 				5C961EDD2656CEF10093F89A /* CombineAlamofireAppTests.xctest */,
 				5C961EE82656CEF10093F89A /* CombineAlamofireAppUITests.xctest */,
+				5C3C899A2677CA8100648193 /* CombineAlamofireSwiftUIApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +318,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C3C89992677CA8100648193 /* CombineAlamofireSwiftUIApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C3C89A82677CA8200648193 /* Build configuration list for PBXNativeTarget "CombineAlamofireSwiftUIApp" */;
+			buildPhases = (
+				5C3C89962677CA8100648193 /* Sources */,
+				5C3C89972677CA8100648193 /* Frameworks */,
+				5C3C89982677CA8100648193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CombineAlamofireSwiftUIApp;
+			packageProductDependencies = (
+				5C3C89AD2677E57200648193 /* CombineAlamofire */,
+			);
+			productName = CombineAlamofireSwiftUIApp;
+			productReference = 5C3C899A2677CA8100648193 /* CombineAlamofireSwiftUIApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5C961EC62656CEEF0093F89A /* CombineAlamofireApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C961EF12656CEF10093F89A /* Build configuration list for PBXNativeTarget "CombineAlamofireApp" */;
@@ -310,6 +405,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					5C3C89992677CA8100648193 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					5C961EC62656CEEF0093F89A = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -343,11 +441,21 @@
 				5C961EC62656CEEF0093F89A /* CombineAlamofireApp */,
 				5C961EDC2656CEF10093F89A /* CombineAlamofireAppTests */,
 				5C961EE72656CEF10093F89A /* CombineAlamofireAppUITests */,
+				5C3C89992677CA8100648193 /* CombineAlamofireSwiftUIApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C3C89982677CA8100648193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3C89A42677CA8200648193 /* Preview Assets.xcassets in Resources */,
+				5C3C89A12677CA8200648193 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C961EC52656CEEF0093F89A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +483,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C3C89962677CA8100648193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3C89B02677FA6A00648193 /* ElementList.swift in Sources */,
+				5C3C89B8267818AE00648193 /* CommentListView.swift in Sources */,
+				5C3C89B7267818AE00648193 /* ToDoListView.swift in Sources */,
+				5C3C89B5267818AE00648193 /* AlbumListView.swift in Sources */,
+				5C3C89B6267818AE00648193 /* PhotoListView.swift in Sources */,
+				5C3C899F2677CA8100648193 /* ContentView.swift in Sources */,
+				5C3C89AA2677CAB400648193 /* UserListView.swift in Sources */,
+				5C3C899D2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C961EC32656CEEF0093F89A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +575,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C3C89A62677CA8200648193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CombineAlamofireSwiftUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4887CWSKD9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CombineAlamofireSwiftUIApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.CombineAlamofireSwiftUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C3C89A72677CA8200648193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CombineAlamofireSwiftUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4887CWSKD9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CombineAlamofireSwiftUIApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.CombineAlamofireSwiftUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5C961EEF2656CEF10093F89A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -693,6 +860,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C3C89A82677CA8200648193 /* Build configuration list for PBXNativeTarget "CombineAlamofireSwiftUIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C3C89A62677CA8200648193 /* Debug */,
+				5C3C89A72677CA8200648193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5C961EC22656CEEF0093F89A /* Build configuration list for PBXProject "CombineAlamofireApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -751,6 +927,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5C3C89AD2677E57200648193 /* CombineAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CombineAlamofire;
+		};
 		5C961EFB2656CF110093F89A /* CombineAlamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CombineAlamofire;
