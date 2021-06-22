@@ -60,7 +60,7 @@ class ViewModel<Element: Codable & Equatable>: FetchingViewModel {
                 case let .success(elements):
                     self.elements.send(elements)
                 case let .failure(error):
-                    print("Failed to load \(Element.self) with error: \(error.localizedDescription)")
+                    print("Failed to load elements with error: \(error.localizedDescription)")
                 }
                 self.isFetching.send(false)
             }
