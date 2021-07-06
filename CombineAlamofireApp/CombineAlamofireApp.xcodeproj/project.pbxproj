@@ -23,6 +23,8 @@
 		5C3C89B6267818AE00648193 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89B2267818AE00648193 /* PhotoListView.swift */; };
 		5C3C89B7267818AE00648193 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89B3267818AE00648193 /* ToDoListView.swift */; };
 		5C3C89B8267818AE00648193 /* CommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C89B4267818AE00648193 /* CommentListView.swift */; };
+		5C41D6AD2693655000EE787F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D6AC2693655000EE787F /* ImagePicker.swift */; };
+		5C41D6AF2693713300EE787F /* ContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D6AE2693713300EE787F /* ContactPicker.swift */; };
 		5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575685265DA1AF001D5983 /* ToDoCell.swift */; };
 		5C575688265DA727001D5983 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575687265DA727001D5983 /* AlbumCell.swift */; };
 		5C57568A265DAE03001D5983 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575689265DAE03001D5983 /* PhotoCell.swift */; };
@@ -82,6 +84,8 @@
 		5C3C89B2267818AE00648193 /* PhotoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
 		5C3C89B3267818AE00648193 /* ToDoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		5C3C89B4267818AE00648193 /* CommentListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentListView.swift; sourceTree = "<group>"; };
+		5C41D6AC2693655000EE787F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5C41D6AE2693713300EE787F /* ContactPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPicker.swift; sourceTree = "<group>"; };
 		5C575685265DA1AF001D5983 /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		5C575687265DA727001D5983 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		5C575689265DAE03001D5983 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
@@ -175,13 +179,15 @@
 		5C3C899B2677CA8100648193 /* CombineAlamofireSwiftUIApp */ = {
 			isa = PBXGroup;
 			children = (
-				5C3C89BA26781B3B00648193 /* ViewModels */,
-				5C3C89B926781AFC00648193 /* ListViews */,
 				5C3C89A02677CA8200648193 /* Assets.xcassets */,
 				5C3C899C2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift */,
+				5C41D6AE2693713300EE787F /* ContactPicker.swift */,
 				5C3C899E2677CA8100648193 /* ContentView.swift */,
+				5C41D6AC2693655000EE787F /* ImagePicker.swift */,
 				5C3C89A52677CA8200648193 /* Info.plist */,
+				5C3C89B926781AFC00648193 /* ListViews */,
 				5C3C89A22677CA8200648193 /* Preview Content */,
+				5C3C89BA26781B3B00648193 /* ViewModels */,
 			);
 			path = CombineAlamofireSwiftUIApp;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "CDE, LLC";
 				TargetAttributes = {
 					5C3C89992677CA8100648193 = {
 						CreatedOnToolsVersion = 12.5;
@@ -487,9 +494,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C41D6AF2693713300EE787F /* ContactPicker.swift in Sources */,
 				5C3C89B02677FA6A00648193 /* ElementList.swift in Sources */,
 				5C3C89B8267818AE00648193 /* CommentListView.swift in Sources */,
 				5C3C89B7267818AE00648193 /* ToDoListView.swift in Sources */,
+				5C41D6AD2693655000EE787F /* ImagePicker.swift in Sources */,
 				5C3C89B5267818AE00648193 /* AlbumListView.swift in Sources */,
 				5C3C89B6267818AE00648193 /* PhotoListView.swift in Sources */,
 				5C3C899F2677CA8100648193 /* ContentView.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import CombineAlamofire
 import SwiftUI
+import ContactsUI
 
 @main
 struct CombineAlamofireSwiftUIAppApp: App {

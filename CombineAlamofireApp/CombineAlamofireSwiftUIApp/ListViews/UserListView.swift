@@ -6,10 +6,14 @@
 //
 
 import CombineAlamofire
+import Contacts
 import SwiftUI
 
 struct UserListView: View {
     @EnvironmentObject private var userList: ElementList<JPUser>
+    @State private var contact: CNContact?
+    @State private var showingContactPicker = false
+    @State private var inputContact: CNContact?
 
     var body: some View {
         NavigationView {
@@ -30,10 +34,25 @@ struct UserListView: View {
                 }
             }
             .navigationTitle("Users")
+            .navigationBarItems(trailing:
+                Button {
+                    showingContactPicker = true
+                } label: {
+                    Image(systemName: "plus.circle")
+                }
+            )
             .onAppear {
                 userList.fetchElements()
             }
+            .sheet(isPresented: $showingContactPicker, onDismiss: loadContact) {
+                ContactPicker(contact: $inputContact)
+            }
         }
+    }
+
+    func loadContact() {
+        guard let inputContact = inputContact else { return }
+        contact = inputContact
     }
 }
 
