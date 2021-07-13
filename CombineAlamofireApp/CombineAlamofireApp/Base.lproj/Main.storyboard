@@ -358,10 +358,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="mct-v1-u0P" customClass="CommentCell" customModule="CombineAlamofireApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="99"/>
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="99.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mct-v1-u0P" id="ORS-OA-Us9">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="99.333335876464844"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="&lt;postId&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7N-ZP-Yod">
@@ -377,13 +377,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd0-QU-J2y">
-                                            <rect key="frame" x="20" y="33" width="350" height="21"/>
+                                            <rect key="frame" x="20" y="33" width="350" height="21.333333333333329"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" layoutMarginsFollowReadableWidth="YES" text="&lt;body&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld7-0H-MwM">
-                                            <rect key="frame" x="20" y="62" width="350" height="17"/>
+                                            <rect key="frame" x="20" y="62.333333333333343" width="350" height="17"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -484,7 +484,7 @@
         <scene sceneID="BLN-Jd-Rsp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xgq-y9-87m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Albums" image="photo.on.rectangle" catalog="system" id="NWx-00-Fwh"/>
+                    <tabBarItem key="tabBarItem" title="Albums" image="photo.fill.on.rectangle.fill" catalog="system" id="NWx-00-Fwh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="geP-fZ-TOg">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -525,7 +525,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>
-        <image name="photo.on.rectangle" catalog="system" width="128" height="96"/>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
