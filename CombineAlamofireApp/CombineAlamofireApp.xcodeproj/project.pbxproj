@@ -12,6 +12,7 @@
 		5C2B155C2665A00300F48439 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B155B2665A00300F48439 /* UITableViewExtensions.swift */; };
 		5C2B155F2665A55300F48439 /* AddUserForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B155E2665A55300F48439 /* AddUserForm.swift */; };
 		5C2B15612665D23600F48439 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B15602665D23600F48439 /* UIViewControllerExtension.swift */; };
+		5C3C191B269CC83A00AE67E3 /* ContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C191A269CC83A00AE67E3 /* ContactPicker.swift */; };
 		5C3C899D2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C899C2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift */; };
 		5C3C899F2677CA8100648193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C899E2677CA8100648193 /* ContentView.swift */; };
 		5C3C89A12677CA8200648193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C89A02677CA8200648193 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		5C2B155B2665A00300F48439 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		5C2B155E2665A55300F48439 /* AddUserForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserForm.swift; sourceTree = "<group>"; };
 		5C2B15602665D23600F48439 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5C3C191A269CC83A00AE67E3 /* ContactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPicker.swift; sourceTree = "<group>"; };
 		5C3C899A2677CA8100648193 /* CombineAlamofireSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineAlamofireSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3C899C2677CA8100648193 /* CombineAlamofireSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAlamofireSwiftUIApp.swift; sourceTree = "<group>"; };
 		5C3C899E2677CA8100648193 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				5C2B155626620C7500F48439 /* ImageCache.swift */,
 				5C2B15582662DEE100F48439 /* ImageLoader.swift */,
+				5C3C191A269CC83A00AE67E3 /* ContactPicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				5C961ECD2656CEEF0093F89A /* SceneDelegate.swift in Sources */,
 				5C575688265DA727001D5983 /* AlbumCell.swift in Sources */,
 				5CC70119265C62FC00C049F7 /* CommentCell.swift in Sources */,
+				5C3C191B269CC83A00AE67E3 /* ContactPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

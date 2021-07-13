@@ -9,11 +9,14 @@ import Combine
 import CombineAlamofire
 import Eureka
 import UIKit
+import ContactsUI
 
 class UsersVC: UITableViewController {
 
-    private var subscriptions = Set<AnyCancellable>()
+    private let contactPicker = ContactPicker()
     private let viewModel = ViewModel<JPUser>()
+
+    private var subscriptions = Set<AnyCancellable>()
 
     // MARK: - UIViewController Overrides
     override func viewDidLoad() {
@@ -37,6 +40,15 @@ class UsersVC: UITableViewController {
     // MARK: - Target Actions
     @IBAction func didPullToRefresh(_ sender: UIRefreshControl) {
         viewModel.fetchElements()
+    }
+
+    @objc func didTapInviteBarButton(_ sender: UIBarButtonItem) {
+        // Present contacts selector and return result
+        contactPicker.present(from: self).sink { completion in
+            print(completion)
+        } receiveValue: { contacts in
+            print(contacts)
+        }.store(in: &subscriptions)
     }
 
     @objc func didTapLeftBarButton(_ sender: UIBarButtonItem) {
@@ -81,7 +93,10 @@ class UsersVC: UITableViewController {
     private func setupNavBar() {
         navigationItem.title = NSLocalizedString("Users", comment: "")
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(didTapLeftBarButton(_:)))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapRightBarButton(_:)))
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapRightBarButton(_:))),
+            UIBarButtonItem(barButtonSystemItem: .reply, target: self, action: #selector(didTapInviteBarButton(_:)))
+        ]
     }
 
     private func setupPullToRefresh() {
