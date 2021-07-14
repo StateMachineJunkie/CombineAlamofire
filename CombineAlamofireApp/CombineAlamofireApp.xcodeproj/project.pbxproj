@@ -325,6 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C3C89A82677CA8200648193 /* Build configuration list for PBXNativeTarget "CombineAlamofireSwiftUIApp" */;
 			buildPhases = (
+				5C82EDFC269E7BE100F463DD /* SwiftLint */,
 				5C3C89962677CA8100648193 /* Sources */,
 				5C3C89972677CA8100648193 /* Frameworks */,
 				5C3C89982677CA8100648193 /* Resources */,
@@ -487,6 +488,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5C82EDFC269E7BE100F463DD /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint or install using HomeBrew\"\nfi\n";
+		};
 		5C83A897269E76010090ECA9 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
