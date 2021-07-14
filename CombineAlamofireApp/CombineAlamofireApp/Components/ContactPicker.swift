@@ -44,7 +44,8 @@ public class ContactPicker: NSObject {
 
     /// Present `CNContactUI` and return the selection results via callback.
     /// - Parameter presentingViewController: Context from which this controller
-    func present(from presentingVC: UIViewController, completion: @escaping (Result<[CNContact], ContactPicker.Error>) -> Void) {
+    func present(from presentingVC: UIViewController,
+                 completion: @escaping (Result<[CNContact], ContactPicker.Error>) -> Void) {
         guard isPresenting == false else { completion(.failure(.isPresenting)); return }
         self.completion = completion
         self.presentingVC = presentingVC
@@ -63,7 +64,6 @@ public class ContactPicker: NSObject {
         controller.delegate = self
     }
 }
-
 
 extension ContactPicker: CNContactPickerDelegate {
     public func contactPickerDidCancel(_ picker: CNContactPickerViewController) {

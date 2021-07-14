@@ -58,6 +58,8 @@ extension UIViewController {
         present(alert, animated: true, completion: completion)
     }
 
+    // swiftlint:disable identifier_name
+
     /// Shows an alert with an OK button.
     func alertOk(_ title: String, message: String = "", ok: ((UIAlertAction) -> Void)? = nil,
                  completion: (() -> Void)? = nil) {

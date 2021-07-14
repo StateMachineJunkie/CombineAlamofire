@@ -19,7 +19,7 @@ class ImageLoader: NSObject {
             return URLSession.shared.dataTaskPublisher(for: url)
                 .receive(on: DispatchQueue.main)
                 .map { (data, /* response */_) -> UIImage? in return UIImage(data: data) }
-                .catch { error in return Just(nil) }
+                .catch { /* error */_ in return Just(nil) }
                 .handleEvents(receiveOutput: { [unowned self] image in
                     guard let image = image else { return }
                     self.cache[url] = image

@@ -146,8 +146,12 @@ class AddUserForm: FormViewController {
 
     private func setupNavBar() {
         navigationItem.title = NSLocalizedString("Create New User", comment: "")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(didTapLeftBarButton(_:)))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(didTapRightBarButton(_:)))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel,
+                                                           target: self,
+                                                           action: #selector(didTapLeftBarButton(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save,
+                                                            target: self,
+                                                            action: #selector(didTapRightBarButton(_:)))
     }
 
     private func validateForm() -> Bool {
@@ -161,6 +165,7 @@ class AddUserForm: FormViewController {
         return true
     }
 
+    // swiftlint:disable force_cast
     /// Convert the form contents into a new `JPUser` value.
     ///
     /// There are a lot of implicitly unwrapped optionals in this code. The idea

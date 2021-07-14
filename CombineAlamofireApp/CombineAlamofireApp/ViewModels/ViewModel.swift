@@ -9,10 +9,9 @@ import Alamofire
 import Combine
 import CombineAlamofire
 
-
 protocol FetchingViewModel {
     var isFetching: CurrentValueSubject<Bool, Never> { get }
-    func fetchElements() -> Void
+    func fetchElements()
 }
 
 class ViewModel<Element: Codable & Equatable>: FetchingViewModel {

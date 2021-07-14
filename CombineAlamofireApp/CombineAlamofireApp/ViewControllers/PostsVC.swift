@@ -31,7 +31,7 @@ class PostsVC: UITableViewController {
         // Initial table-view load.
         tableView.beginRefreshing()
     }
-    
+
     // MARK: - Target Actions
     @IBAction func didPullToRefresh(_ sender: UIRefreshControl) {
         viewModel.fetchElements()
@@ -57,8 +57,12 @@ class PostsVC: UITableViewController {
     // MARK: - Private Methods
     private func setupNavBar() {
         navigationItem.title = NSLocalizedString("Posts", comment: "")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(didTapLeftBarButton(_:)))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapRightBarButton(_:)))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit,
+                                                           target: self,
+                                                           action: #selector(didTapLeftBarButton(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                            target: self,
+                                                            action: #selector(didTapRightBarButton(_:)))
     }
 
     private func setupPullToRefresh() {

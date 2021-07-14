@@ -31,7 +31,7 @@ class ToDosVC: UITableViewController {
         // Initial table-view load.
         tableView.beginRefreshing()
     }
-    
+
     // MARK: - Target Actions
     @IBAction func didPullToRefresh(_ sender: UIRefreshControl) {
         viewModel.fetchElements()
@@ -46,13 +46,17 @@ class ToDosVC: UITableViewController {
     }
 
     // MARK: - UITableViewDataSource Overrides
+
+    // swiftlint:disable force_cast
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as! ToDoCell
         cell.configure(with: viewModel.elements.value[indexPath.row])
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView,
+                            commit editingStyle: UITableViewCell.EditingStyle,
+                            forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             viewModel.removeElementAtIndex.send(indexPath.row)
         }
@@ -67,15 +71,20 @@ class ToDosVC: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
-    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    override func tableView(_ tableView: UITableView,
+                            editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
 
     // MARK: - Private Methods
     private func setupNavBar() {
         navigationItem.title = NSLocalizedString("ToDo", comment: "")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(didTapLeftBarButton(_:)))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapRightBarButton(_:)))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit,
+                                                           target: self,
+                                                           action: #selector(didTapLeftBarButton(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                            target: self,
+                                                            action: #selector(didTapRightBarButton(_:)))
     }
 
     private func setupPullToRefresh() {
