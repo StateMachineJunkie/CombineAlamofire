@@ -27,6 +27,7 @@
 		5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575685265DA1AF001D5983 /* ToDoCell.swift */; };
 		5C575688265DA727001D5983 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575687265DA727001D5983 /* AlbumCell.swift */; };
 		5C57568A265DAE03001D5983 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C575689265DAE03001D5983 /* PhotoCell.swift */; };
+		5C8E1AC0269F48C100A8EECB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E1ABF269F48C100A8EECB /* Observable.swift */; };
 		5C961ECB2656CEEF0093F89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961ECA2656CEEF0093F89A /* AppDelegate.swift */; };
 		5C961ECD2656CEEF0093F89A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */; };
 		5C961ED22656CEEF0093F89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C961ED02656CEEF0093F89A /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		5C575685265DA1AF001D5983 /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		5C575687265DA727001D5983 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		5C575689265DAE03001D5983 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		5C8E1ABF269F48C100A8EECB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		5C961EC72656CEEF0093F89A /* CombineAlamofireApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineAlamofireApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C961ECA2656CEEF0093F89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C961ECC2656CEEF0093F89A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +219,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		5C8E1ABE269F48A500A8EECB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5C8E1ABF269F48C100A8EECB /* Observable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5C961EBE2656CEEF0093F89A = {
 			isa = PBXGroup;
 			children = (
@@ -225,8 +235,9 @@
 				5C961EE02656CEF10093F89A /* CombineAlamofireAppTests */,
 				5C961EEB2656CEF10093F89A /* CombineAlamofireAppUITests */,
 				5C3C899B2677CA8100648193 /* CombineAlamofireSwiftUIApp */,
-				5C961EC82656CEEF0093F89A /* Products */,
 				5C961EFA2656CF110093F89A /* Frameworks */,
+				5C961EC82656CEEF0093F89A /* Products */,
+				5C8E1ABE269F48A500A8EECB /* Utilities */,
 			);
 			sourceTree = "<group>";
 		};
@@ -552,6 +563,7 @@
 				5CC70114265C5FA600C049F7 /* UsersVC.swift in Sources */,
 				5CC7011B265C72D300C049F7 /* UserCell.swift in Sources */,
 				5C575686265DA1AF001D5983 /* ToDoCell.swift in Sources */,
+				5C8E1AC0269F48C100A8EECB /* Observable.swift in Sources */,
 				5C2B155F2665A55300F48439 /* AddUserForm.swift in Sources */,
 				5C2B155C2665A00300F48439 /* UITableViewExtensions.swift in Sources */,
 				5C2B15592662DEE100F48439 /* ImageLoader.swift in Sources */,
