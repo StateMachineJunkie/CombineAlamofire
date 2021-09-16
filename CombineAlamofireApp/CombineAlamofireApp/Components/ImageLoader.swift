@@ -18,9 +18,9 @@ class ImageLoader: NSObject {
     /// Load images for display in our UI
     ///
     /// This method utilizes and internal instance of ``ImageCache`` to satisfy image requests from callers.
-    /// If the image is in the cache it will be returned immediately. If not, the requested image will be fetched
-    /// from the internet. The key used for cache lookup is the given URL. In the case of a miss, said URL is
-    /// used to fetch the image from the internet.
+    /// If the image is in the cache, it is returned immediately. If not, the requested image is be fetched from
+    /// the internet. The key used for cache lookup is the given URL. In the case of a miss, said URL is used
+    /// to fetch the image.
     ///
     /// - Parameter url: Used as a key for the internal cache. If there is a cache miss, this parameter is used to fetch the image from the internet.
     /// - Returns: If the image is available in cache or from the URL, it will be returned. If not, `nil` will be returned.
